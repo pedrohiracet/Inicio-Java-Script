@@ -7,6 +7,7 @@ console.log('test')
 a = 3
 b = 8
 c =1.75
+d = 11
 
 
 x = true
@@ -37,3 +38,27 @@ document.writeln(
     '<br>potenciação: '+(a**b)
 
 )
+
+                        //  aula2
+/*
+ Operadores Aritméticos:
+  Adição:         +
+  Subtração:      -
+  Multiplicação:  *
+  Divisão:        /
+  Módulo:         %
+  Potêcia:        **
+  
+  Operadores de Comparação:
+  Igualdade:      ==
+  Maior Que:      >
+  Menor Que:      <
+  Maior ou Igual: >=
+  Menor ou Igual: <=
+  Diferente:      !=
+  
+  Operadores Lógicos:
+  e (and):        &&
+  ou (or):        ||
+  não not:        !      
+    */

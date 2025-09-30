@@ -39,7 +39,7 @@ document.writeln(
 
 )
 
-                        //  aula2
+                        
 /*
  Operadores Aritméticos:
   Adição:         +

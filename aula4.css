@@ -1,0 +1,12 @@
+#saida p{
+    color: white;
+    padding: 10px;
+}
+
+.acerto{
+    background-color: dodgerblue;
+}
+
+.erro{
+    background-color: firebrick;
+}

@@ -54,7 +54,7 @@ function porcentagem(){
     n1 = Number(document.getElementById('n1').value)
     n2 = Number(document.getElementById('n2').value) 
     porcento = (n1/100)*n2
-    document.getElementById('resultadodassomas').innerHTML = porcento
+    document.getElementById('resultadodassomas').innerHTML = porcento+'%'
 }
 
 function resultado(){

@@ -5,4 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    transition: 10s;
 }

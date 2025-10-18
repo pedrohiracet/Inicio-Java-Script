@@ -11,17 +11,28 @@
 
     <h1>caixa:</h1>
 
-    <div id="caixa">caixa</div>
+    <div id="caixa"></div>
 
     <hr>
     <h1>Painel de edição</h1>
 
-    <input id="largura" type="number" placeholder="defina a largura">
-    <button onclick="mudarLargura()">OK</button>
 
-    <br>
-    <input id="cor" type="color">
-    <button onclick="mudarCor()">OK</button>
+Texto: <input id="texto" type="text"><br>
+Largura:<input id="largura" type="range" min="100" max="1000" value="500" ><br>
+Cor:<input id="cor" type="color" value="#ffffff"><br>
+Altura:<input id="altura" type="range" min="100" max="1000" value="500"><br>
+Borda: <input id="radius" type="range" value="0" min="100" max="1000"> <br>
+Contorno: <input id="grossura" type="number" style="width: 50px;" min="0">
+<select name="" id="tipo">
+    <option value="solid">Normal</option>
+    <option value="dashed">Tracejada</option>
+    <option value="dotted">Pontilhada</option>
+    <option value="doubled">Dupla</option>
+</select>
+<input id="cor2" type="color" value="#000000"><br>
+
+
+    <button onclick="editarCaixa()">OK</button>
     
 </body>
 </html>

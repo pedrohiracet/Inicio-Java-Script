@@ -13,7 +13,7 @@ function numero(){
      }
 }
 
-function validarsenha(){
+function validarSenha(){
    senha = document.getElementById('senha').value
 
    if(senha == 'super123'){

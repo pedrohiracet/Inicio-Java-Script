@@ -17,7 +17,7 @@ function editarCaixa(){
     caixa.style.borderRadius = radius+'px'
 
     grossura = Number(document.getElementById('grossura').value)
-    
+
 
     tipo = document.getElementById('tipo').value
 
@@ -25,5 +25,7 @@ function editarCaixa(){
 
     caixa.style.border = grossura+'px '+tipo+' '+cor2
 
+    tempo = Number(document.getElementById('tempo').value)
+    caixa.style.transition = tempo+'s'
     
 }

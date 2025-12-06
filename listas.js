@@ -1,12 +1,34 @@
-lista = []
+lista = JSON.parse(localStorage.getItem('lista'))
+window.onload = carregarLista
+function carregarLista(){
+    if(lista.length > 0){
+        document.getElementById('lista').innerHTML = '<li>'+lista.join('</li><li>')+'</li>'
+
+}
+}
 
 function adicionar(){
-    adicionarlista = document.getElementById('adicionar').value
-    lista.push(adicionarlista)
-    document.getElementById('lista').innerHTML = '<li>'+lista.join('</li><li>')+'</li>'
+
+    // ENTRADA
+    item = document.getElementById('adicionar').value.trim()
+    item = item[0].toUpperCase() + item.slice(1).toLowerCase()
+    document.getElementById('adicionar').value = ''
+
+    // VALIDAÇÃO
+    if( item.length == 0 || item.length > 20){
+        alert('O nome do item precisa ter entre 1 à 20 caracteres.')
+    }else if( lista.includes(item) ){
+        alert('Esse item já está presente na lista.')
+    }else{
+        lista.push(item)
+        localStorage.setItem('lista',JSON.stringify(lista))
+    }
+    carregarLista()
+ 
 }
 
 /*
+
 lista = []              declaração da lista
 
 lista                   retorna a lista completa
@@ -30,7 +52,6 @@ lista.indexOf('r')      retorna o índice do item informado
 
 lista.sort()            ordena a lista alfabeticamente
 lista.reverse()         inverte a lista
-
 */
 
 

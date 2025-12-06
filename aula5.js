@@ -1,6 +1,9 @@
 function editarCaixa(){
     caixa = document.getElementById('caixa')
 
+    transicao = Number(document.getElementById('transicao').value)
+    caixa.style.transition = transicao+'s'
+
     texto = document.getElementById('texto').value
     caixa.innerText = texto
 
@@ -25,5 +28,5 @@ function editarCaixa(){
 
     caixa.style.border = grossura+'px '+tipo+' '+cor2
 
-    
+   
 }

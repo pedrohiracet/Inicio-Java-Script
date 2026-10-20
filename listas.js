@@ -29,6 +29,8 @@ function adicionar(){
 
 /*
 
+Aula de
+
 lista = []              declaração da lista
 
 lista                   retorna a lista completa
